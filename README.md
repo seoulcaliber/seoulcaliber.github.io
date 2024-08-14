@@ -1,2 +1,2 @@
-# Coming Soon Dawg....
-# 2024 - Aurora CO
+# Coming Soon - 2024 - Aurora CO
+# seoulcaliberllc@gmail.com
