@@ -1,3 +1,3 @@
 # About
 # Coming Soon!
-# Aurora, CO
+## Aurora, CO
