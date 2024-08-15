@@ -81,13 +81,18 @@ t<!doctype html>
               For Inquiries
               
               Please fill out your name email address phone and a detailed message and we will respond within the next business day.
-              	<form action="/action_page.php">
-  <label for="fname">First name:</label><br>
-  <input type="text" id="fname" name="fname" value=""><br>
-  <label for="lname">Last name:</label><br>
-  <input type="text" id="lname" name="lname" value=""><br><br>
-  <input type="submit" value="Send Message">
-</form>	
+
+<form action="mailto:info@seoulcaliber.com" method="post" enctype="text/plain">
+Name:<br>
+<input type="text" name="name"><br>
+E-mail:<br>
+<input type="text" name="mail"><br>
+Phone:<br>
+<input type="text" name="number"><br>
+Message:<br>
+<input type="text" name="message" size="250"><br><br>
+<input type="submit" value="Send Message">
+</form>
               
               
               Send Message
