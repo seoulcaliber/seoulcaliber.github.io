@@ -1,14 +1,7 @@
 t<!doctype html>
 <html>
   <head>
-       <script src="assets/js/jquery.min.js"></script>
-<script type="text/javascript">var submitted=false;</script>
-<script type="text/javascript">
-$('#gform').on('submit', function(e) {
-  $('#gform *').fadeOut(2000);
-  $('#gform').prepend('Your submission has been processed...');
-  });
-</script>
+    
 
     <!-- Page setup -->
     <meta charset="utf-8">
@@ -128,6 +121,14 @@ $('#gform').on('submit', function(e) {
     </footer>
     
     <!-- Load additional JS scripts here -->
+       <script src="assets/js/jquery.min.js"></script>
+<script type="text/javascript">var submitted=false;</script>
+<script type="text/javascript">
+$('#gform').on('submit', function(e) {
+  $('#gform *').fadeOut(2000);
+  $('#gform').prepend('Your submission has been processed...');
+  });
+</script>
     <script type="text/javascript" src="script.js"></script>
     
   </body>
