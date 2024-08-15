@@ -103,7 +103,7 @@ body {
 header, #content, footer { 
   background: rgba(0,0,0,.8); 
   padding:25px;
-  color:#ffffff; 
+  color:#000000; 
 }
 
 /* Menu Links */
@@ -126,7 +126,7 @@ ul.main-menu li a:hover {
 }
 ul.main-menu li a.active {
   color:#FFFFFF;
-  border-bottom-color:#000000;
+  border-bottom-color:#EF6D3D;
 }
 
 /* Utility classes */
