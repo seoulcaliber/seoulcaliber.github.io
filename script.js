@@ -23,7 +23,14 @@
     // This will extract the region name from URL hash, and then load [region].html into the main #content div
     // var region = location.hash.toString() || '#first';
     // $('#content').load(region.slice(1) + '.html')
-    
+    <script src="assets/js/jquery.min.js"></script>
+<script type="text/javascript">var submitted=false;</script>
+<script type="text/javascript">
+$('#gform').on('submit', function(e) {
+  $('#gform *').fadeOut(2000);
+  $('#gform').prepend('Your submission has been processed...');
+  });
+</script>
   });
   
 })(jQuery);
