@@ -84,21 +84,25 @@ t<!doctype html>
               
               Please fill out your name email address phone and a detailed message and we will respond within the next business day.
   
-
-<form name="gform" id="gform" enctype="text/plain" action="https://docs.google.com/forms/d/1FAIpQLSeV9kkXOIGja_O3naNO7cQtrai6O47rFxHKlIogA235-tMyCg/formResponse?" target="hidden_iframe" onsubmit="submitted=true;">
-  Name:<br>
-  <input type="text" name="entry.1054208006" id="entry.1054208006"><br>
-  Email:<br>
-  <input type="text" name="entry.810989529" id="entry.810989529"><br>
-  Phone:<br>
-  <input type="text" name="entry.412170000" id="entry.412170000"><br>
-  Message:<br>
-  <input type="text" name="entry.529258182" id="entry.529258182">
-    
-  <input type="submit" value="Submit">
+<form name="submit-to-google-sheet">
+  <input name="email" type="email" placeholder="Email" required>
+  <button type="submit">Send</button>
 </form>
 
-<iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>
+<script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbz7LhCFfkcWEJvoEN_hSmmLlvHhBorUBaRj5qmDEi16I28o2LfOpGhBXPKuIOBNl8FM/exec'
+  const form = document.forms['submit-to-google-sheet']
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => console.log('Success!', response))
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
+
+
+
 
   
               
@@ -121,14 +125,7 @@ t<!doctype html>
     </footer>
     
     <!-- Load additional JS scripts here -->
-       <script src="assets/js/jquery.min.js"></script>
-<script type="text/javascript">var submitted=false;</script>
-<script type="text/javascript">
-$('#gform').on('submit', function(e) {
-  $('#gform *').fadeOut(2000);
-  $('#gform').prepend('Your submission has been processed...');
-  });
-</script>
+
     <script type="text/javascript" src="script.js"></script>
     
   </body>
