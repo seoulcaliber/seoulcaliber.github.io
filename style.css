@@ -100,12 +100,18 @@ body {
   max-width:800px;
   margin:25px auto;
 }
-header, #content, footer { 
+header, #content { 
   background: rgba(0,0,0,.8); 
   padding:25px;
   color:#ffffff; 
 }
 
+#footer{
+    display: table;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
 /* Menu Links */
 ul.main-menu {
   margin: 0;
