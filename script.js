@@ -20,19 +20,7 @@
     $('.main-menu a[href="'+ region +'"]').addClass('active'); 
 
     var coll = document.getElementsByClassName("collapsible");
-var i;
 
-for (i = 0; i < coll.length; i++) {
-  coll[i].addEventListener("click", function() {
-    this.classList.toggle("active");
-    var content = this.nextElementSibling;
-    if (content.style.display === "block") {
-      content.style.display = "none";
-    } else {
-      content.style.display = "block";
-    }
-  });
-}
 
     // Alternate method: Use AJAX to load the contents of an external file into a div based on URL fragment
     // This will extract the region name from URL hash, and then load [region].html into the main #content div
