@@ -111,7 +111,7 @@ ul.main-menu {
   margin: 0;
   padding: 0;
   display: flex;
-  flex-wrap: wrap;
+ /* flex-wrap: wrap; */
   justify-content: left;
   list-style: none;
 }
