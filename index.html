@@ -9,7 +9,25 @@
     <link rel="icon" type="image/png" href="favicon.png"> 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     
- 
+ <style>
+* {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+</style>
+	  
     <style>
         .container {
             display: flex;
@@ -101,6 +119,15 @@
             <p>
               We are Seoul Caliber LLC. Your #1 Sporting and Recreational Goods Retailer specializing in Firearms and all shooting related activites in Aurora, Colorado. <br>
               Website in progress. <br>
+
+		    <div class="row">
+  <div class="column">
+    <img src="co.jpg" alt="co" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="nssf.jpg" alt="nsff" style="width:100%">
+  </div>
+
             </p>
           </div>
           
