@@ -1,377 +1,143 @@
-<!DOCTYPE html>
-<html>
-
+<!doctype html>
+<html lang="en-US">
 <head>
-  <!-- Basic -->
-  <meta charset="utf-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <!-- Mobile Metas -->
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-  <!-- Site Metas -->
-  <meta name="keywords" content="" />
-  <meta name="description" content="" />
-  <meta name="author" content="" />
+    <meta charset="utf-8">
+    <title>SEOUL CALIBER LLC</title>
+    <meta name="description" content="Welcome to Seoul Caliber LLC">
+    <meta name="author" content="b">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <link rel="icon" type="image/png" href="favicon.png"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet" type="text/css" />
+    <link href="http://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css" />
+    <link href="style.css" rel="stylesheet" type="text/css" />
 
-  <title>SEOUL CALIBER LLC</title>
+    <style>
+        .container {
+            display: flex;
+            align-items: center; 
+        }
+        .container img {
+            margin-right: 10px; 
+        }
+        .collapsible {
+            background-color: #777;
+            color: black;
+            cursor: pointer;
+            padding: 18px;
+            width: 100%;
+            border: none;
+            text-align: left;
+            outline: none;
+            font-size: 15px;
+        }
+        .active, .collapsible:hover {
+            background-color: #555;
+        }
+        .content {
+            padding: 0 18px;
+            display: none;
+            overflow: hidden;
+            background-color: #262626;
+        }
+        footer {
+            text-align: center;
+            padding: 3px;
+            background-color: darkgray;
+            color: black;
+        }
+    </style>
 
-  <!-- slider stylesheet -->
-  <link rel="stylesheet" type="text/css"
-    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.3/assets/owl.carousel.min.css" />
-
-  <!-- font awesome style -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-
-  <!-- bootstrap core css -->
-  <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
-
-  <!-- fonts style -->
-  <link href="https://fonts.googleapis.com/css?family=Poppins:400,600,700|Roboto:400,700&display=swap" rel="stylesheet">
-
-  <!-- Custom styles for this template -->
-  <link href="css/style.css" rel="stylesheet" />
-  <!-- responsive style -->
-  <link href="css/responsive.css" rel="stylesheet" />
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 </head>
 
 <body>
-  <div class="hero_area">
-    <!-- header section strats -->
-    <header class="header_section">
-      <div class="container">
-        <div class="top_contact-container">
-          <div class="tel_container">
-            <a href="">
-              <img src="images/telephone-symbol-button.png" alt=""> Call / Text : +01 7205154314
-            </a>
-          </div>
-          <div class="social-container">
-            <a href="">
-              <img src="images/fb.png" alt="" class="s-1">
-            </a>
-            <a href="">
-              <img src="images/instagram.png" alt="" class="s-2">
-            </a>
-          </div>
-        </div>
-      </div>
-      <div class="container-fluid">
-        <nav class="navbar navbar-expand-lg custom_nav-container pt-3">
-          <a class="navbar-brand" href="index.html">
-            <img src="images/logo.png" alt="">
-            <span>
-              SEOUL CALIBER LLC
-            </span>
-          </a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <div class="d-flex  flex-column flex-lg-row align-items-center w-100 justify-content-between">
-              <ul class="navbar-nav  ">
-                <li class="nav-item active">
-                  <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
-                </li>
-
-              </ul>
-              <form class="form-inline ">
-                <input type="search" placeholder="Search">
-                <button class="btn  my-2 my-sm-0 nav_search-btn" type="submit"></button>
-              </form>
-              <div class="login_btn-contanier ml-0 ml-lg-5">
-                <a href="">
-                  <img src="images/user.png" alt="">
-                  <span>
-                    Login
-                  </span>
-                </a>
-              </div>
-            </div>
-          </div>
-
-        </nav>
-      </div>
-    </header>
-    <!-- end header section -->
-    <!-- slider section -->
-    <section class=" slider_section position-relative">
-      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-        <ol class="carousel-indicators">
-          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-        </ol>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <div class="container">
-              <div class="row">
-                <div class="col-md-4">
-                  <div class="img-box">
-                    <img src="images/me2dicine.png" alt="">
-                  </div>
-                </div>
-                <div class="col-md-8">
-                  <div class="detail-box">
-                    <h1>
-                      Welcome To <br>
-                      <span>
-                        Seoul Caliber LLC
-                      </span>
-
-                    </h1>
-                    <p>
-                      Website currently in Progress. Please check back for Updates soon!
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <div class="container">
-              <div class="row">
-                <div class="col-md-4">
-                  <div class="img-box">
-                    <img src="images/medicin2e.png" alt="">
-                  </div>
-                </div>
-                <div class="col-md-8">
-                  <div class="detail-box">
-                    <h1>
-                      Did You <br>
-                      <span>
-                        Know?
-                      </span>
-
-                    </h1>
-                    <p>
-                      There is no firearm registry in Colorado, you do not have to register your firearm. (CRS 29-11.7-102)
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <div class="container">
-              <div class="row">
-                <div class="col-md-4">
-                  <div class="img-box">
-                    <img src="images/medicin1e.png" alt="">
-                  </div>
-                </div>
-                <div class="col-md-8">
-                  <div class="detail-box">
-                    <h1>
-                      Did You <br>
-                      <span>
-                        Know?
-                      </span>
-
-                    </h1>
-                    <p>
-                      There is a three (3) day wait period for transfers in Colorado.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-          <span class="sr-only">Previous</span>
-        </a>
-        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-          <span class="sr-only">Next</span>
-        </a>
-      </div>
-
-
-    </section>
-    <!-- end slider section -->
-  </div>
-
-  
-
- 
-  
-
-  <!-- contact section -->
-  <section class="contact_section">
     <div class="container">
-      <div class="row">
-        <div class="custom_heading-container ">
-          <h2>
-            Reach out
-          </h2>
-        </div>
-      </div>
+        <header id="header">
+            <img src="headersmaller.png" alt="Logo" class="logo">
+            <ul class="main-menu">
+                <li><a href="#home">home</a></li>
+                <li><a href="#about">about</a></li>
+                <li><a href="#services">services</a></li>
+                <li><a href="#policies">policies</a></li>
+                <li><a href="#contact">contact</a></li>
+            </ul>                 
+        </header>
     </div>
-    <div class="container layout_padding2">
-      <div class="row">
-        <div class="col-md-5">
-          <div class="form_contaier">
-            <form>
-              <div class="form-group">
-                <label for="exampleInputName1">Name</label>
-                <input type="text" class="form-control" id="exampleInputName1">
-              </div>
-              <div class="form-group">
-                <label for="exampleInputNumber1">Phone Number</label>
-                <input type="text" class="form-control" id="exampleInputNumber1">
-              </div>
 
-              <div class="form-group">
-                <label for="exampleInputEmail1">Email </label>
-                <input type="email" class="form-control" id="exampleInputEmail1">
-              </div>
-              <div class="form-group ">
-                <label for="inputState">Select Category</label>
-                <select id="inputState" class="form-control">
-				  <option selected>Services</option>
-                  <option selected>Other</option>
-                  <option selected>Transfers</option>
-                </select>
-              </div>
-              <div class="form-group">
-                <label for="exampleInputMessage">Message</label>
-                <input type="text" class="form-control" id="exampleInputMessage">
-              </div>
-              <button type="submit" class="">Send</button>
-            </form>
-          </div>
-        </div>
+    <div id="container">
+        <div class="inner">
+            <div id="content">
+                <div id="home" class="content-region hide">
+                    <h2>Home</h2>
+                    <p>We are Seoul Caliber LLC, your #1 Sporting and Recreational Goods Retailer specializing in firearms and all shooting-related activities in Aurora, Colorado. <br> Website in progress.</p>
+                </div>
 
-        </div>
-      </div>
-    </div>
-  </section>
+                <div id="about" class="content-region hide">
+                    <h2>About</h2>
+                    <p>Located in the most diverse city in Colorado, we are the most diverse firearm retailer! We offer a comprehensive range of services including Firearm Transfers and Sales, Gunsmithing, Consultations, Safety Training, and Notary Services in multiple languages.</p>
+                    <h1><u>Meet the Team</u></h1>
+                    <div>
+                        <p>In Progress</p>
+                    </div>
+                </div>
 
-  <!-- end contact section -->
+                <div id="policies" class="content-region hide">
+                    <h2>Policies</h2>
+                    <p><b>Currently in progress</b></p>
+                    <button type="button" class="collapsible">CUSTOMER SERVICE</button>
+                    <div class="content">
+                        <p>If you encounter any problems with your transaction or if you have any questions about the status of your order, simply contact us: info@seoulcaliber.com</p>
+                    </div>
+                    <!-- Repeat for other policies -->
+                </div>
 
-  <!-- info section -->
-  <section class="info_section layout_padding2">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-3">
-          <div class="info_contact">
-            <h4>
-              Contact
-            </h4>
-            <div class="box">
-              <div class="img-box">
-                <img src="images/telephone-symbol-button.png" alt="">
-              </div>
-              <div class="detail-box">
-                <h6>
-                  +01 7205154314
-                </h6>
-              </div>
+                <div id="services" class="content-region hide">
+                    <h2>Services</h2>
+                    <p><b>Consultation</b></p>
+                    <button type="button" class="collapsible">Consultation</button>
+                    <div class="content">
+                        <p>We offer a first-time consultation free of charge for 20 minutes via email, telephone, video chat, and many platforms.</p>
+                    </div>
+                    <!-- Repeat for other services -->
+                </div>
+
+
+                <div id="contact" class="content-region hide">
+                    <h2>Contact</h2>
+                    <p>For Sales, Transfers, and Gunsmithing: sam@seoulcaliber.com or bryan@seoulcaliber.com</p>
+                    <p>Please note, we are currently not open to the public.</p>
+                    <p>For Appointments and other questions, please contact us at info@seoulcaliber.com or (720) 515-4314.</p>
+                </div>
             </div>
-            <div class="box">
-              <div class="img-box">
-                <img src="images/email.png" alt="">
-              </div>
-              <div class="detail-box">
-                <h6>
-                  info@seoulcaliber.com
-                </h6>
-              </div>
-            </div>
-          </div>
         </div>
-        <div class="col-md-3">
-          <div class="info_menu">
-            <h4>
-              Menu
-            </h4>
-            <ul class="navbar-nav  ">
-              <li class="nav-item active">
-                <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
-              </li>
-
-            </ul>
-          </div>
-        </div>
-        <div class="col-md-6">
-          <div class="info_news">
-            <h4>
-              newsletter
-            </h4>
-            <form action="">
-              <input type="text" placeholder="Enter Your email">
-              <div class="d-flex justify-content-center justify-content-end mt-3">
-                <button>
-                  Subscribe
-                </button>
-              </div>
-            </form>
-          </div>
-        </div>
-      </div>
     </div>
-  </section>
 
+    <footer>
+        <p><b><u>Contact Us</u></b> <br>
+        11590 E 2nd Ave, Aurora, CO 80010 <br>
+        Mon-Sat 8AM-8PM <br>
+        Text or Call: (720) 515-4314<br>
+        Email: info@seoulcaliber.com</p>
+        <p><b>seoulcaliber.com</b> © 2024 All rights reserved.</p>
+    </footer>
 
-  <!-- end info section -->
-
-  <!-- footer section -->
-  <section class="container-fluid footer_section">
-    <p>
-      &copy; 2024 All Rights Reserved. 
-      <a href="https://seoulcaliber.com">seoulcaliber.com</a>
-    </p>
-  </section>
-  <!-- footer section -->
-
-  <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
-  <script type="text/javascript" src="js/bootstrap.js"></script>
-  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/owl.carousel.min.js">
-  </script>
-  <script type="text/javascript">
-    $(".owl-carousel").owlCarousel({
-      loop: true,
-      margin: 10,
-      nav: true,
-      navText: [],
-      autoplay: true,
-      responsive: {
-        0: {
-          items: 1
-        },
-        600: {
-          items: 2
-        },
-        1000: {
-          items: 4
+    <script>
+        var coll = document.getElementsByClassName("collapsible");
+        for (var i = 0; i < coll.length; i++) {
+            coll[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var content = this.nextElementSibling;
+                content.style.display = (content.style.display === "block") ? "none" : "block";
+            });
         }
-      }
-    });
-  </script>
-  <script type="text/javascript">
-    $(".owl-2").owlCarousel({
-      loop: true,
-      margin: 10,
-      nav: true,
-      navText: [],
-      autoplay: true,
+    </script>
 
-      responsive: {
-        0: {
-          items: 1
-        },
-        600: {
-          items: 2
-        },
-        1000: {
-          items: 4
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
         }
-      }
-    });
-  </script>
+    </script>
 </body>
-
 </html>
